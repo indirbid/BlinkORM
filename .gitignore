@@ -1,0 +1,76 @@
+# ----------------------------------------------------------------------
+# Ortak sistem ve editör dosyaları
+# ----------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+*.log
+*.bak
+*.swp
+*~
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+[Tt]humbs.db
+
+# ----------------------------------------------------------------------
+# IDE ve editör klasörleri
+# ----------------------------------------------------------------------
+.idea/
+.vscode/
+*.sublime-*
+.php_cs.cache
+.phpactor.json
+.phpstan/
+psalm.xml
+infection.json
+
+# ----------------------------------------------------------------------
+# Composer
+# ----------------------------------------------------------------------
+/vendor/
+
+# Kütüphane/paket projelerinde composer.lock genelde commit edilir
+# (tutarlı bağımlılıklar için) → bu yüzden ignore etmiyoruz
+# composer.lock
+
+# ----------------------------------------------------------------------
+# Ortam ve gizli dosyalar
+# ----------------------------------------------------------------------
+.env
+.env.*
+.env.local
+.env.example.local
+*.env.*
+config/*.local.php
+
+# ----------------------------------------------------------------------
+# Test ve coverage dosyaları
+# ----------------------------------------------------------------------
+coverage/
+build/
+clover.xml
+.phpcs-report.xml
+.phpmd-report.xml
+.phpstan.neon.cache
+/deprecations.log
+phpunit.xml
+.phpunit.result.cache
+
+# ----------------------------------------------------------------------
+# Proje özel ignore'lar
+# ----------------------------------------------------------------------
+# Örnek / test veritabanı dosyaları
+*.sql
+*.sqlite
+*.db
+tests/_output/
+tests/_support/_generated/
+
+# Dokümantasyon build çıktıları (eğer varsa)
+docs/_build/
+
+# Geçici / debug dosyaları
+*.tmp
+*.cache
