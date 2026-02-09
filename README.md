@@ -34,8 +34,8 @@ Eloquent benzeri kullanım sunar ama çok daha az kod, sıfır bağımlılık ve
 git clone https://github.com/indirbid/blinkorm.git
 
 
-Hızlı Başlangıç
-PHP<?php
+### Hızlı Başlangıç
+<?php
 
 use App\Models\User;
 
@@ -66,25 +66,25 @@ class User extends Blink
     }
 }
 
-// Kullanım örnekleri
+###  Kullanım örnekleri
 $user = new User();
 $user->name     = 'Sanal';
 $user->email    = 'sanal@example.com';
 $user->password = 'gizli123';
 $user->save();                  // ⚡ blink!
 
-// Bul ve güncelle
+###  Bul ve güncelle
 $found = User::find(1);
 $found->name = 'Sanal Yeni';
 $found->save();
 
-// Sayfalama
+###  Sayfalama
 $paginated = User::paginate(15, 2);
 foreach ($paginated['data'] as $user) {
     echo $user->full_name . "\n";
 }
 
-// Soft delete
+###  Soft delete
 $user->delete();                        // soft delete
 User::withTrashed()->find($user->id);   // silinmiş kaydı getir
 $user->restore();                       // geri getir
@@ -95,7 +95,7 @@ Modern — PHP 8+ attribute'ları ile temiz, deklaratif kod
 Hızlı — Gereksiz abstraction yok, direkt PDO ile çalışıyor
 Esnek — Mikroservislerden monolith projelere kadar her yere uyar
 
-Yakında Gelecek
+### Yakında Gelecek
 
 İlişkiler: hasOne, hasMany, belongsTo, belongsToMany
 Eager loading (with())
