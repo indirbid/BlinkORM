@@ -1,6 +1,6 @@
 # ⚡ BlinkORM – Blink-Fast PHP Active Record
 **Blink once. Save forever.**
-BlinkORM, PHP 8.1+ için geliştirilmiş, ultra hafif ve modern bir **Active Record** uygulamasıdır. Eloquent benzeri bir geliştirme deneyimi sunarken; sıfır bağımlılık, minimum kod yapısı ve maksimum hıza odaklanır.
+BlinkORM, PHP 8.4+ için geliştirilmiş, ultra hafif ve modern bir **Active Record** uygulamasıdır. Eloquent benzeri bir geliştirme deneyimi sunarken; sıfır bağımlılık, minimum kod yapısı ve maksimum hıza odaklanır.
 ---
 ## ✨ Öne Çıkan Özellikler
 * **Modern PHP:** PHP 8.4+ (strict types + attributes,Property Hooks, Asymmetric Visibility ve Simplified Implicit Nullability) desteği.
