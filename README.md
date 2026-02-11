@@ -1,34 +1,22 @@
-# BlinkORM – Blink-Fast PHP Active Record
+# ⚡ BlinkORM – Blink-Fast PHP Active Record
 
-**Blink once. Save forever.** ⚡
+> **"Blink once. Save forever."**
 
-Ultra lightweight, modern **Active Record** implementation for PHP.
+BlinkORM, PHP 8.1+ için geliştirilmiş, ultra hafif ve modern bir **Active Record** uygulamasıdır. Eloquent benzeri bir geliştirme deneyimi sunarken; sıfır bağımlılık, minimum kod yapısı ve maksimum hıza odaklanır.
 
-Eloquent benzeri kullanım sunar ama çok daha az kod, sıfır bağımlılık ve maksimum hız ile.
+---
 
-- PHP 8.1+ (strict types + attributes)
-- Sadece **PDO** kullanıyor — başka hiçbir şeye ihtiyaç yok
-- `#[Table]` ve `#[Column]` attribute'ları ile deklaratif modeller
-- Timestamps, soft deletes, fillable/guarded, casting, mutators/accessors **kutudan çıkar**
-- Basit pagination, event sistemi, dirty checking
+## ✨ Öne Çıkan Özellikler
 
-### Özellikler
+* **Modern PHP:** PHP 8.1+ (strict types + attributes) desteği.
+* **Bağımlılıksız:** Sadece PDO kullanır, harici hiçbir kütüphaneye ihtiyaç duymaz.
+* **Deklaratif Modeller:** `#[Table]` ve `#[Column]` attribute'ları ile temiz yapı.
+* **Kullanıma Hazır Fonksiyonlar:** Timestamps, soft deletes, fillable/guarded koruması ve veri casting.
+* **Gelişmiş Veri Yönetimi:** Dirty checking, mutators/accessors ve event sistemi.
+* **Hafif ve Hızlı:** Eloquent'tan ~15–20 kat daha az kod yükü ile direkt PDO performansı.
 
-- Attribute tabanlı tablo ve sütun tanımlama
-- Otomatik `created_at` / `updated_at`
-- Soft delete desteği (`delete()`, `restore()`, `forceDelete()`, `withTrashed()`, `onlyTrashed()`)
-- Veri tipleri casting (`int`, `bool`, `datetime`, `array` vs.)
-- Accessor & mutator desteği (`getXAttribute`, `setXAttribute`)
-- Mass assignment koruması (`fill()` / `forceFill()`)
-- Global ve model bazlı event listener'lar
-- `find()`, `all()`, `paginate()` yardımcı metodları
-- Performans odaklı PDO wrapper (`PdoDb`)
+---
 
-### Kurulum
+## 🛠 Kurulum
 
-Şu an Composer paketi henüz yayınlanmadı, ama çok yakında Packagist'te olacak.
-
-Şimdilik manuel kurulum:
-
-```bash
-git clone https://github.com/indirbid/blinkorm.git
+Şu an geliştirme aşamasındadır ve çok yakında Packagist üzerinden yayına alınacaktır.
